@@ -2,5 +2,5 @@
 
 Local build:
 ```shell
-docker build -t andreformento/docker-env:1.0.1 .
+docker build -t andreformento/docker-env:1.0.2 .
 ```
