@@ -9,3 +9,10 @@ Publish:
 ```shell
 docker push andreformento/docker-env:1.0.3
 ```
+
+## Docker with prometheus
+
+```shell
+docker build -t prometheus-cli ./prometheus
+docker run --rm -it prometheus-cli
+```
