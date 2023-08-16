@@ -18,7 +18,8 @@ RUN apt-get update && \
     # Downloading Alertmanager
     wget https://github.com/prometheus/alertmanager/releases/download/v0.23.0/alertmanager-0.23.0.linux-amd64.tar.gz && \
     tar xvfz alertmanager-*.tar.gz && \
-    mv alertmanager-0.23.0.linux-amd64 alertmanager
+    mv alertmanager-0.23.0.linux-amd64 alertmanager && \
+    mv alertmanager/amtool /usr/local/bin
     # Cleaning up
     # apt-get remove --purge -y wget tar && \
     # apt-get autoremove -y && \
